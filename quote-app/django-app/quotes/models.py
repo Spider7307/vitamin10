@@ -9,4 +9,5 @@ class Quote(models.Model):
     # Your fields here
     text=models.CharField(max_length=500)
     author=models.CharField(max_length=100)
-    
+    def __str__(self):
+        return self.text
